@@ -1,0 +1,20 @@
+deepfake-detector/
+├── src/
+│   ├── realtime/
+│   │   ├── detector.py       # OpenCV real-time processing
+│   │   └── utils.py          # Frame processing helpers
+│   ├── app/
+│   │   ├── main.py           # Streamlit UI
+│   │   └── processors.py     # Video analysis backend
+│   ├── models/
+│   │   ├── xception_lstm.py  # Detection model architecture
+│   │   └── weights.h5        # Pretrained weights
+│   └── deepstar_plugin/      # Benchmarking integration
+│       └── adapter.py        # Deepstar compatibility layer
+├── tests/
+│   ├── test_realtime.py      # OpenCV camera tests
+│   └── test_models.py        # Model validation
+├── data/
+│   └── sample/               # Example videos
+├── requirements.txt
+└── README.md
